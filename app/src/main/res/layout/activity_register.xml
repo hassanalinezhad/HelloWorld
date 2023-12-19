@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <View
+        android:id="@+id/main_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back1"
+        app:layout_constraintBottom_toBottomOf="@id/nav2"
+        app:layout_constraintTop_toTopOf="@id/nav1" />
+
+    <View
+        android:id="@+id/nav1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="700dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/nav2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="700dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        android:id="@+id/glass"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/back2"
+        app:layout_constraintBottom_toBottomOf="@id/nav2"
+        app:layout_constraintTop_toTopOf="@id/nav1" />
+
+    <EditText
+        android:id="@+id/Username_regpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:ems="10"
+        android:fontFamily="@font/alfa_slab_one"
+        android:hint="Username"
+        android:inputType="text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="@id/glass"
+        app:layout_constraintStart_toStartOf="@id/glass"
+        app:layout_constraintTop_toTopOf="@id/text_reg_regpage" />
+
+    <EditText
+        android:id="@+id/password_regpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:fontFamily="@font/alfa_slab_one"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="@id/glass"
+        app:layout_constraintStart_toStartOf="@id/glass"
+        app:layout_constraintTop_toTopOf="@id/Username_regpage" />
+
+    <Button
+        android:id="@+id/submit_regpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="@id/glass"
+        app:layout_constraintStart_toStartOf="@id/glass"
+        app:layout_constraintTop_toTopOf="@id/EmailAddress_regpage" />
+
+    <TextView
+        android:id="@+id/text_reg_regpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Register"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="65dp"
+        app:layout_constraintEnd_toEndOf="@id/glass"
+        app:layout_constraintStart_toStartOf="@id/glass"
+        app:layout_constraintTop_toTopOf="@id/glass" />
+
+    <Button
+        android:id="@+id/login_regpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:onClick="Btn_log_regpage"
+        android:text="Login"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="@id/main_back"
+        app:layout_constraintEnd_toEndOf="@id/glass"
+        app:layout_constraintTop_toTopOf="@id/submit_regpage" />
+
+    <EditText
+        android:id="@+id/EmailAddress_regpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:fontFamily="@font/alfa_slab_one"
+        android:hint="E-Mail"
+        android:inputType="textEmailAddress"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="@id/glass"
+        app:layout_constraintStart_toStartOf="@id/glass"
+        app:layout_constraintTop_toTopOf="@id/password_regpage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
